@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>期末</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <div id="game-container">
+    <div id="ui-layer">
+        <span>Score: <span id="score">0</span></span>
+    </div>
+
+    <div id="player"></div>
+
+    <div id="start-screen">
+        <h1>霓虹閃避</h1>
+        <p>使用 ← 左 右 → 方向鍵移動</p>
+        <p>閃避掉落的藍色方塊</p>
+        <br>
+        <button onclick="startGame()">開始遊戲</button>
+    </div>
+
+    <div id="game-over-screen" class="hidden">
+        <h1 class="game-over-text">GAME OVER</h1>
+        <p>最終分數: <span id="final-score">0</span></p>
+        <br>
+        <button onclick="startGame()">再玩一次</button>
+    </div>
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
